@@ -1,0 +1,196 @@
+@font-face {
+    font-family: 'OPTI';
+    src: url('./OPTI.otf');
+  }
+
+body{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: OPTI, serif;
+    color: aliceblue;
+    background-image:url('./images/dota-background.jpg') ; 
+    background-size:100% 100%;
+
+    /* display: grid;
+    grid-template-rows: 2fr 1fr 6fr 1fr; */
+}
+
+
+/* ---------------------------------------MAIN BLOCKS--------------------------------------- */
+
+.main-head-block{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.main-logo{
+ background-image: url('./images/Dota2.ico');
+ background-size: cover;
+ width: 100px;
+ height: 100px;
+}
+
+.main-head{
+   
+    font-size: 3rem;
+}
+
+.button-block{
+    display: flex;
+    justify-content: center;
+
+}
+
+.button-block button{
+    font-family: OPTI, serif;
+    color: white;
+    font-size: 2rem;
+    background-color: rgba(137, 43, 226, 0.678);
+    width: 300px;
+    height: 50px;    
+}
+
+.main-foot{
+    font-size: 1.5rem;
+    background-color: rgba(128, 0, 128, 0.377);
+    text-align: center;
+    height: 40px;
+   
+}
+
+#content{
+    padding:0 100px;
+    min-height: calc(100vh - 70px);
+}
+
+#content div{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+#content h1{
+    text-align: center;
+    font-size: 1.5rem;
+    
+}
+
+#content p{
+    width: min(75ch, 60%);
+    font-size: 1.5rem;
+}
+
+/* ---------------------------------------HOME BLOCKS--------------------------------------- */
+
+
+
+
+
+
+/* ---------------------------------------MENU BLOCKS--------------------------------------- */
+
+.menu-list{
+
+padding:10px 100px;
+  display: grid;
+  justify-items: center;
+  justify-content: center;
+  
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+
+.menu-list li{
+    width: 250px;
+    background-color: rgba(128, 0, 128, 0.589);
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px;
+    list-style:none;
+    border: 1px solid purple;
+    font-size: 1.5rem;
+    text-shadow: 2px 2px rgb(0, 0, 0);
+}
+
+.menu-list li div {
+    min-width: 100px;
+    min-height: 100px;
+   
+}
+
+.img1, .img2, .img3, .img4, .img5, .img6{
+    background-size:100px 100px;
+    border-radius: 10%;
+}
+
+.img1{
+   background-image: url('./images/tango.jpg');
+}
+
+.img2{
+    background-image: url('./images/smoke.jpeg');
+}
+
+.img3{
+    background-image: url('./images/mango.jpeg');
+}
+
+.img4{
+    background-image: url('./images/bottle.jpeg');
+}
+
+.img5{
+    background-image: url('./images/green-bottle.jpeg');
+}
+
+.img6{
+    background-image: url('./images/blue-bottle.jpeg')
+}
+
+/*---------------------------------CONTACTS------------------------------------------------*/
+
+.contacts-list li{
+    list-style:square;
+    font-size: 1.5rem;
+
+}
+
+/*---------------------------------MEDIA QUERIES------------------------------------------------*/
+
+@media only screen and (max-width: 900px) {
+    body{
+        background-image:url('./images/dota2-background-mobile.jpg') ; 
+    }
+    .button-block{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu-list{
+        grid-template-columns: 1fr;
+    }
+
+    #content div{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+   
+    .button-block button{
+        width: 350px;      
+    }
+    .menu-list li{
+        width: 350px;
+    }
+}
