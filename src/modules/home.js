@@ -6,7 +6,7 @@ function home(){
     para.classList.add('home-para')
     header.classList.add('home-head')
     
-    header.textContent = 'DOTA BAR'
+    header.textContent = 'HOME'
     
 
     para.textContent = `Lorem ipsum dolor sit amet consectetur, adipisicing elit. 

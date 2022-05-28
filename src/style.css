@@ -8,10 +8,10 @@ body{
     margin: 0;
     padding: 0;
     font-family: OPTI, serif;
-    color: aliceblue;
+    color: rgb(247, 247, 247);
     background-image:url('./images/dota-background.jpg') ; 
-    background-size:100% 100%;
-
+    background-size:cover;
+    background-attachment: fixed;
     /* display: grid;
     grid-template-rows: 2fr 1fr 6fr 1fr; */
 }
@@ -36,7 +36,8 @@ body{
 
 .main-head{
    
-    font-size: 3rem;
+    font-size: 2.5rem;
+    
 }
 
 .button-block{
@@ -54,6 +55,16 @@ body{
     height: 50px;    
 }
 
+.button-block button:hover{
+    cursor:pointer;
+    background-color: rgba(137, 43, 226);
+
+}
+
+
+
+
+
 .main-foot{
     font-size: 1.5rem;
     background-color: rgba(128, 0, 128, 0.377);
@@ -63,7 +74,7 @@ body{
 }
 
 #content{
-    padding:0 100px;
+    padding:0 50px;
     min-height: calc(100vh - 70px);
 }
 
@@ -78,12 +89,22 @@ body{
 #content h1{
     text-align: center;
     font-size: 1.5rem;
+    background-color: rgba(255, 255, 255, 0.658);
+    color: rgb(109, 54, 161);
+    border-radius: 20px;
+    border: 2px groove rgb(32, 32, 32);
+    padding: 10px;
     
 }
 
 #content p{
+    padding: 10px 10px;
     width: min(75ch, 60%);
     font-size: 1.5rem;
+    background-color: rgba(237, 7, 245, 0.295);
+    text-shadow: 1px 1px rgb(12, 12, 12);
+    border-radius: 20px;
+
 }
 
 /* ---------------------------------------HOME BLOCKS--------------------------------------- */
@@ -160,20 +181,31 @@ padding:10px 100px;
 /*---------------------------------CONTACTS------------------------------------------------*/
 
 .contacts-list li{
-    list-style:square;
+    padding: 10px;
+    list-style:circle;
     font-size: 1.5rem;
+    background-color: rgba(128, 0, 128, 0.589);
+    border: 1px solid purple;
+    border-radius: 10px;
+
 
 }
 
 /*---------------------------------MEDIA QUERIES------------------------------------------------*/
 
 @media only screen and (max-width: 900px) {
-    body{
-        background-image:url('./images/dota2-background-mobile.jpg') ; 
+    #content p{
+        width: 90%;
+    
     }
+  
     .button-block{
         flex-direction: column;
         align-items: center;
+    }
+
+    .button-block button {
+        width: 90%;
     }
 
     .menu-list{
@@ -191,6 +223,13 @@ padding:10px 100px;
         width: 350px;      
     }
     .menu-list li{
-        width: 350px;
+        width: 90%;
     }
+}
+@media only screen and (max-width: 600px){
+
+    body{
+        background-image:url('./images/dota2-background-mobile.jpg') ; 
+    }
+   
 }

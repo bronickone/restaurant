@@ -9,9 +9,9 @@ function contacts(){
 
     header.textContent = 'CONTACTS'
 
-    contact1.textContent = 'contact1'
-    contact2.textContent = 'contact2'
-    contact3.textContent = 'contact3'
+    contact1.textContent = 'Lifestealer ###-###-#####'
+    contact2.textContent = 'Batrider ###-###-#####'
+    contact3.textContent = 'Viper ###-###-#####'
 
     list.appendChild(contact1)
     list.appendChild(contact2)
