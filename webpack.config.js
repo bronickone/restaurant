@@ -35,5 +35,5 @@ module.exports = {
      title: 'Restaurant',
     }),
   ],
-  mode: 'development',
+  mode: 'production',
 };
